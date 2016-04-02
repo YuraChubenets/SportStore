@@ -42,9 +42,9 @@ namespace SportStore.WebUI.Infrastructure
                           new Game {GameId=4, Name = "StarCraft", Price=999,Category="Categ3" },
                           new Game {GameId=5, Name = "HalfLife", Price=785.5m,Category="Categ1" }
                       });
-           // kernel.Bind<IGameRepository>().ToConstant(mock.Object);
+            kernel.Bind<IGameRepository>().ToConstant(mock.Object);
 
-             kernel.Bind<IGameRepository>().To<EFGameRepository>();
+           //  kernel.Bind<IGameRepository>().To<EFGameRepository>();
         }
     }
 }
