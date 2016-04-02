@@ -38,7 +38,9 @@ namespace SportStore.WebUI.Infrastructure
                       {
                           new Game { Name = "SimCity", Price = 1499 },
                           new Game { Name = "TITANFALL", Price=2299 },
-                          new Game { Name = "Battlefield 4", Price=899.4M }
+                          new Game { Name = "Battlefield 4", Price=899.4M },
+                          new Game { Name = "StarCraft", Price=999 },
+                          new Game { Name = "HalfLife", Price=785.5m }
                       });
             kernel.Bind<IGameRepository>().ToConstant(mock.Object);
 
