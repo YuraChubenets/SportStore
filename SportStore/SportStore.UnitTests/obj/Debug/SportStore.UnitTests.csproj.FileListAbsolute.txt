@@ -67,7 +67,6 @@ D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\roslyn\VBCSCompiler.exe.
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\SportStore.UnitTests.dll.config
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\SportStore.UnitTests.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\SportStore.UnitTests.pdb
-D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\Moq.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\Ninject.dll
@@ -102,7 +101,6 @@ D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\ru\System.Web.Razor.reso
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\ru\System.Web.WebPages.resources.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\ru\System.Web.WebPages.Deployment.resources.dll
 D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\ru\System.Web.WebPages.Razor.resources.dll
-D:\SportStore\SportStore\SportStore.UnitTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 D:\SportStore\SportStore\SportStore.UnitTests\obj\Debug\SportStore.UnitTests.csprojResolveAssemblyReference.cache
 D:\SportStore\SportStore\SportStore.UnitTests\obj\Debug\SportStore.UnitTests.dll
 D:\SportStore\SportStore\SportStore.UnitTests\obj\Debug\SportStore.UnitTests.pdb

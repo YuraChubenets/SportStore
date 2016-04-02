@@ -36,15 +36,15 @@ namespace SportStore.WebUI.Infrastructure
             Mock<IGameRepository> mock = new Mock<IGameRepository>();
             mock.Setup(m => m.Games).Returns(new List<Game>
                       {
-                          new Game { Name = "SimCity", Price = 1499 },
-                          new Game { Name = "TITANFALL", Price=2299 },
-                          new Game { Name = "Battlefield 4", Price=899.4M },
-                          new Game { Name = "StarCraft", Price=999 },
-                          new Game { Name = "HalfLife", Price=785.5m }
+                          new Game { GameId=1, Name = "SimCity", Price = 1499, Category="Categ1" },
+                          new Game {GameId=2, Name = "TITANFALL", Price=2299,Category="Categ2" },
+                          new Game {GameId=3, Name = "Battlefield 4", Price=899.4M,Category="Categ1" },
+                          new Game {GameId=4, Name = "StarCraft", Price=999,Category="Categ3" },
+                          new Game {GameId=5, Name = "HalfLife", Price=785.5m,Category="Categ1" }
                       });
-            kernel.Bind<IGameRepository>().ToConstant(mock.Object);
+           // kernel.Bind<IGameRepository>().ToConstant(mock.Object);
 
-            // kernel.Bind<IGameRepository>().To<EFGameRepository>();
+             kernel.Bind<IGameRepository>().To<EFGameRepository>();
         }
     }
 }
