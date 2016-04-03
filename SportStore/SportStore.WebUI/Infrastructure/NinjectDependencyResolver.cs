@@ -5,6 +5,7 @@ using SportStore.Domain.Concrete;
 using SportStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -14,15 +15,12 @@ namespace SportStore.WebUI.Infrastructure
     public class NinjectDependencyResolver : IDependencyResolver
     {
         private IKernel kernel;
-
         public NinjectDependencyResolver(IKernel kernelParam)
         {
             kernel = kernelParam;
             AddBindings();
         }
-
-        public object GetService(Type serviceType)
-        {
+        public object GetService(Type serviceType)        {
             return kernel.TryGet(serviceType);
         }
 
@@ -44,7 +42,17 @@ namespace SportStore.WebUI.Infrastructure
                       });
             kernel.Bind<IGameRepository>().ToConstant(mock.Object);
 
-           //  kernel.Bind<IGameRepository>().To<EFGameRepository>();
+            //  kernel.Bind<IGameRepository>().To<EFGameRepository>();
+
+
+            //Email
+            EmailSettings emailSettings = new EmailSettings
+            {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+
+            kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
+                .WithConstructorArgument("settings", emailSettings);
         }
     }
 }

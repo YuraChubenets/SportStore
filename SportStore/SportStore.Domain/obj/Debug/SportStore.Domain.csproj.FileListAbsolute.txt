@@ -55,4 +55,3 @@ D:\SportStore\SportStore\SportStore.Domain\bin\Debug\ru\System.Web.WebPages.Depl
 D:\SportStore\SportStore\SportStore.Domain\bin\Debug\ru\System.Web.WebPages.Razor.resources.dll
 D:\SportStore\SportStore\SportStore.Domain\obj\Debug\SportStore.Domain.dll
 D:\SportStore\SportStore\SportStore.Domain\obj\Debug\SportStore.Domain.pdb
-D:\SportStore\SportStore\SportStore.Domain\obj\Debug\SportStore.Domain.csprojResolveAssemblyReference.cache
