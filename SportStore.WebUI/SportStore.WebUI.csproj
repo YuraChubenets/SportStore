@@ -252,7 +252,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportStore.Domain\SportStore.Domain.csproj">
       <Project>{efb6d468-d6a2-4424-ad71-baa3df70a9fe}</Project>

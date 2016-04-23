@@ -12,8 +12,6 @@ namespace SportStore.WebUI.Controllers
 {
     public class AccountController : Controller
     {
-
-
         private ApplicationUserManager UserManager
         {
             get

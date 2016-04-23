@@ -6,9 +6,14 @@
 }
 
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3>Список игр</h3>
+    <div class="panel-heading row">
+        <h3 class="col-md-6">Список игр</h3>
+        <div class="btn btn-link  col-md-offset-5 bottom-right">
+            @Html.ActionLink("Выход", "Logout", "Account", null, new { @class = "right" })
+        </div>
     </div>
+    
+
     <div class="panel-body">
         <table class="table table-striped table-condensed table-bordered">
             <tr>

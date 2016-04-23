@@ -12,9 +12,8 @@
        category = link,
        page = 1
    }, new
-   {
-       @class = "btn btn-default btn-sm"
-                    + (link == ViewBag.SelectedCategory ? " btn-primary" : "")
-   })
+              {
+                  @class = "btn btn-default btn-sm"+ (link == ViewBag.SelectedCategory ? " btn-primary" : "")
+              })
     }
 </div>

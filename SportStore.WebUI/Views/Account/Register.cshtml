@@ -12,7 +12,7 @@
         <h2>Регистрация</h2>
     </div>
 
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form - horizontal" }))
     {
         @Html.AntiForgeryToken()
 

@@ -1,4 +1,5 @@
 ﻿using SportStore.Domain.Abstract;
+using SportStore.Domain.Entities;
 using SportStore.WebUI.Models;
 using System.Linq;
 using System.Web.Mvc;
@@ -14,7 +15,16 @@ namespace SportStore.WebUI.Controllers
             repository = repo;
         }
 
-        public ViewResult List(string category, int page =1)
+
+        public string GetImage(int gameId)
+        {
+           Game game = repository.Games.FirstOrDefault(g => g.GameId == gameId);
+           return game.ImagePath;      
+        }
+    
+
+
+    public ViewResult List(string category, int page =1)
         {
             SportListViewModel model;
             model = new SportListViewModel
